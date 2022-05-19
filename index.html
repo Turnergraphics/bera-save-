@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+        <link rel="shortcut icon" type="image/x-icon" href="images/bera wireframe site logo.png">
+        <title> BERA - Online marketplace with classifed ads listing </title>
+    </head>
+    <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0"><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
+
+        <!--header begins-->
+        <header id="header" class="fixed-top">
+
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="images/bera logo 2.png" alt="Logo">
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
+                    <span class="fa fa-bars"> MENU </span> 
+                </button>
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#" class="nav-item nav-link active">Home</a>
+                        <a href="#" class="nav-item nav-link drop-down">Categories</a>
+                        <a href="#" class="nav-item nav-link">Blog</a>
+                        <a href="#" class="nav-item nav-link">Become a seller</a>
+                        <a href="#" class="nav-item nav-link">Log In</a>
+                        
+                    </div>
+                    <a href="#" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>
+                </div>
+            </nav>
+                
+        </header>
+        <!--header ends-->
+                <script src="js/main.js"></script>
+            
+        <!-- hero begins --->
+        <section id="hero" class="d-flex align-items-center" style="background: url(images/background.png); background-attachment: fixed; background-position: right; background-size: cover;background-repeat: no-repeat;background-color:var(--primary);background-blend-mode:hard-light;">
+            <div class="container highlight">
+                <div class="row">
+                        
+                        <div class="container">
+                            <h2 style="text-align: center; color:var(--c2)"> Nigeria's No.1 Classified Ads Listing Services </h2>
+                            <div class="row aos-init aos-animate" data-aos="zoom-in">
+                                <div class="col-lg-2 col-md-6 form-group">
+                                    <select id="most-like" name="mostLike" class="form-control" >
+                                      <option disabled selected value>Location</option>
+                                      <option value="map">Use map location</option>
+                                      <option value="Lagos">Lagos</option>
+                                      <option value="Ilorin">Ibadan</option>
+                                      <option value="Ilorin">Ilorin</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-6 form-group">
+                                    <select id="most-like" name="mostLike" class="form-control" required>
+                                      <option disabled selected value>Category</option>
+                                      <option value="electronics">Electronics</option>
+                                      <option value="mobile phones & tablets">Mobile Phones & Tablets</option>
+                                      <option value="fashion">Fashion</option>
+                                      <option value="services">Services</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-5 col-md-9 form-group">
+                                    <input
+                                      type="text"
+                                      name="name"
+                                      id="name"
+                                      class="form-control"
+                                      placeholder="I am looking for ..."
+                                    />
+                                </div>
+                                <div class="col-lg-2 order-3 order-lg-3 " data-aos="zoom-in" data-aos-delay="200">
+                                    <a href="#"><button type="submit" id="submit" class="btn-sign-in submit" style="background: var(--accent);margin: 0px 0 0 0;border: none;">
+                                        Search
+                                      </button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row aos-init aos-animate" data-aos="zoom-in">
+                            <div class="col-lg-4">
+                                <h1></h1>
+                            </div>
+                            <div class="col-lg-6 form-group">
+                            <a href="#" class="btn-sign-out"> Start Selling</a>
+                            <a href="#" class="btn-sign-in" >Start Buying</a>    
+                            </div>
+                            <div class="col-lg-2"></div>
+                            </div>
+                        </div>
+                
+                </div>
+            </div>
+        </section>
+        <!--hero ends-->
+
+
+        <!--trending items begin-->
+
+        <div class="container-fluid py-5" id="feature" style="text-align: center;">
+            <div class="container-fluid py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="mb-5">Top Deals</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="level"> Iphone XS </div>
+                        <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad9.png">
+                        <h2> N 1300 </h2>
+                            <p class="m-0"> 128GB ROM </p>
+                            <button class="btn">select</button>
+                        </div>
+                        <button class="btn">select</button>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="level"> Weight Machine </div>
+                        <div class="feature-item p-4">
+                            <img class="thumbnail" src="images/ad2.png">
+                            <h2> N 1300 </h2>
+                            <p class="m-0"> no face ID </p>
+                            <button class="btn">select</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="level"> Facial Massager Gun </div>
+                        <div class="feature-item p-4">
+                            <img class="thumbnail" src="images/ad10.png">
+                            <h2> N 1300 </h2>
+                            <p class="m-0"> Clean and affordable </p>
+                            <button class="btn">select</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="level"> Iphone 12 </div>
+                        <div class="feature-item p-4">
+                            
+                            <img class="thumbnail" src="images/ad6.png">
+                            <h2> N 930 </h2>
+                            <p class="m-0"> Refurbished </p>
+                            <button class="btn">select</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="level"> Iphone 12 </div>
+                        <div class="feature-item p-4">
+                            <img class="thumbnail" src="images/ad6.png">
+                            <h2> N 930 </h2>
+                            <p class="m-0"> Refurbished </p>
+                            <button class="btn">select</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="level"> Iphone 12 </div>
+                        <div class="feature-item p-4">
+                            <img class="thumbnail" src="images/ad6.png">
+                            <h2> N 930 </h2>
+                            <p class="m-0"> Refurbished </p>
+                            <button class="btn">select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="level"> Iphone XS </div>
+                    <div class="feature-item p-4">
+                    <img class="thumbnail" src="images/ad9.png">
+                    <h2> N 1300 </h2>
+                        <p class="m-0"> 128GB ROM, no face ID </p>
+                        <button class="btn">select</button>
+                    </div>
+                    <button class="btn">select</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="level"> Weight Machine </div>
+                    <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad2.png">
+                        <h2> N 1300 </h2>
+                        <p class="m-0">Lorem ipsum dolor sit.</p>
+                        <button class="btn">select</button>
+                    </div>
+                    <button class="btn">See similar items</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="level"> Facial Massager Gun </div>
+                    <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad10.png">
+                        <h2> N 1300 </h2>
+                        <p class="m-0"> Clean and affordable </p>
+                        <button class="btn">select</button>
+                    </div>
+                    <button class="btn">See similar items</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="level"> Iphone 12 </div>
+                    <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad6.png">
+                        <h2> N 930 </h2>
+                        <p class="m-0"> Refurbished </p>
+                        <button class="btn">select</button>
+                    </div>
+                    <button class="btn">See similar items</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="level"> Iphone 12 </div>
+                    <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad6.png">
+                        <h2> N 930 </h2>
+                        <p class="m-0"> Refurbished </p>
+                        <button class="btn">select</button>
+                    </div>
+                    <button class="btn">See similar items</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="level"> Iphone 12 </div>
+                    <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad6.png">
+                        <h2> N 930 </h2>
+                        <p class="m-0"> Refurbished </p>
+                        <button class="btn">select</button>
+                    </div>
+                    <button class="btn">See similar items</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid py-5" id="feature">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-5">Most Searched Categories</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="level"> Hoodies </div>
+                    <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad2.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="level"> Hoodies </div>
+                    <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad2.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="level"> Gaming Accessories </div>
+                    <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad10.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="level"> Women's Bags </div>
+                    <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad6.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="level"> Phones </div>
+                    <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad6.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="level"> Computer Accesories </div>
+                    <div class="feature-item p-4">
+                        <img class="thumbnail" src="images/ad6.png">
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+            </div>
+        </div>
+
+        <!--trending items end-->
+
+
+        <!-- Download Start -->
+        <div class="container-fluid py-5" style=" background: linear-gradient(to top, var(--primary), var(--secondary));">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="images/bera download 1.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h1 class="mb-4" style="color: var(--light);">Our App Is Available For Any Device. Download now!</h1>
+                        <p class="mb-4" style="color: var(--light);">Buy, sell and find just about anything using the app on your mobile device or computer.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="#" class="d-flex btn-download rounded py-3 px-4">
+                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Available On</p>
+                                        <h5 class="text-white mb-0">App Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="#" class="d-flex btn-download rounded py-3 px-4">
+                                    <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Available On</p>
+                                        <h5 class="text-white mb-0">Play Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Download End -->
+
+        <!--footer begins-->
+        <footer id="footer" style="background:var(--primary)">
+
+            <div class="footer-newsletter">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <h4>Sign Up for Our Newsletter</h4>
+                            <p>Stay up to date on latest services and products.</p>
+                            <form action="" method="post" onsubmit="if (!window.__cfRLUnblockHandlers) return false; return subscribeme()">
+                            <input type="email" name="email" id="useremail">
+                            <input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--footer top begins-->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <img src="images/bera logo 2.png" class="img-fluid" style="transform: translate(-12%);">
+                            <strong>Phone:</strong><a href="#"> +234**********</a><br>
+                            <strong>Email:</strong> <a href="#">info@bera.net</a><br>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>About Bera</h4>
+                            <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">We are hiring!</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms & Conditions</a></li>            
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy Policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Billing Policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Suppport</h4>
+                            <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">support@bera.ng</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Contact Us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">FQA</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Safety Advice</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Top Categories</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Promote Your Ad</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">My Account</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer top ends-->
+    
+            <!--copyright-->
+            <div class="container footer-bottom clearfix">
+                <div class="copyright">
+                    © Copyright <strong><span>2022</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://turnergraphics.github.io/">Timilehin A.</a>
+                </div>
+            </div>   
+            <!--copyright ends-->
+        
+        </footer>
+        <!--footer ends-->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+
+    </body>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+</html>
