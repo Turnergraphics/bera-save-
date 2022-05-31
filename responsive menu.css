@@ -28,7 +28,8 @@
   color:#fff
 }
 #header .logo img{
-  max-height:60px
+  max-height:60px;
+  padding-left: 20px;
 }
 
 .topnav {
@@ -55,6 +56,42 @@
   font-size: 17px;
 }
 
+/* Style the search box inside the navigation bar */
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  color: var(--dark);
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: var(--secondary);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: var(--accent);
+}
+
+@media screen and (max-width: 600px) {
+
+  .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: none;
+  }
+}
 .active {
   color: var(--secondary);
 }

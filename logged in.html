@@ -40,27 +40,20 @@
                     <img src="images/bera logo 2.png" alt="Logo">
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                     </a>
-                <a href="index.html" class=" nav-item nav-link active">Home</a>
-                <a class=" nav-item nav-link" href="#">News</a>
-                <a class=" nav-item nav-link" href="#">Contact</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Categories 
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#"> Electronics</a>
-                        <a href="#">Mobile Phones & Accesories</a>
-                        <a href="#">Gaming Accessories</a>
-                        <a href="#"> Health & Personal Care</a>
-                        <a href="#"> Computers & Accesories</a>
-                        <a href="#"> Others</a>
-                    </div>
-                </div> 
-                <a class=" nav-item nav-link" href="account.html">My Account</a>            
-
-                <a href="sign up.html" class="btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>
+                <a href="#home" class="active">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact <i class="fa fa-android"></i></a>
+                
+                <a href="account.html"> <i class="fa fa-user"></i> My Account </a>
+                <div class="search-container">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button><a>SELL</a></button>
+                        <button type="submit"><i class="fa fa-search"> Search</i></button>
+                    </form>
+                </div>
                 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-            </div>
+              </div>
 
           
             <script>
@@ -120,7 +113,7 @@
                             </div>
                         </div>
 
-                        <div class="container bs">
+                        <div class="container">
                             <div class="row aos-init aos-animate" data-aos="zoom-in">
                             <div class="col-lg-4">
                                 <h1></h1>
@@ -315,10 +308,7 @@
                                   background-color: #d7e2e8;
                                 }
                           
-                            </style>   
-                    
-                            <a href="log in.html" class="btn-sign-out btn btn-primary btn-lg show-modal nav-item nav-link" data-toggle="modal" data-target="#myModal"> Start Selling</a>
-                            <a href="log in.html" class="btn-sign-in btn btn-primary btn-lg show-modal nav-item nav-link" data-toggle="modal" data-target="#myModal" >Start Buying</a>    
+                            </style>    
                             </div>
                         </div>
                 
@@ -329,130 +319,72 @@
 
 
         <!--trending items begin-->
+        
         <div class="container-fluid py-5" id="feature" style="text-align: center;">
+            <style>
+                .p-4 > a {
+                    
+                    text-decoration: none;
+                }
+                .thumbnail{
+                border-radius: 100%;
+                border: none;
+                text-align: center;
+                }
+                
+                @media(max-width:575px){
+                    .thumbnail{
+                        height: 100px;
+                        width: 100%;
+                    }
+                }
+            </style>
             <div class="container-fluid py-5 px-lg-5">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="mb-5">Top Deals</h1>
+                <div class="text-left">
+                    <h1 class="mb-5">Explore Popular Categories    <i class="fa fa-arrow-right"></i></h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="level"> Iphone XS </div>
-                        <div class="feature-item p-4">
+                        <div class="p-4">
+                        <img class="thumbnail" src="images/sneakers.png">
+                        <a href="#"> Sneakers </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
                         <img class="thumbnail" src="images/ad9.png">
-                        <h2> N 1300 </h2>
-                            <p class="m-0"> 128GB ROM </p>
-                            <button class="btn">select</button>
+                        <a href="#"> Smartphones </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
+                        <img class="thumbnail" src="images/sneakers 2.png">
+                        <a href="#"> Sneakers </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
+                        <img class="thumbnail" src="images/ad9.png">
+                        <a href="#"> Sneakers </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
+                        <img class="thumbnail" src="images/watch.png">
+                        <a href="#"> Wristwatches </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
+                        <img class="thumbnail" src="images/ad9.png">
+                        <a href="#"> Sell </a>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="level"> Car Radio </div>
-                        <div class="feature-item p-4">
-                            <img class="thumbnail" src="images/ad2.png">
-                            <h2> N 1300 </h2>
-                            <p class="m-0"> no face ID </p>
-                            <button class="btn">select</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="level"> Casio Watch </div>
-                        <div class="feature-item p-4">
-                            <img class="thumbnail" src="images/ad10.png">
-                            <h2> N 1300 </h2>
-                            <p class="m-0"> Clean & affordable </p>
-                            <button class="btn">select</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 wow col-xs-4 fadeInUp" data-wow-delay="0.5s">
-                        <div class="level"> Iphone 12 </div>
-                        <div class="feature-item p-4">
-                            
-                            <img class="thumbnail" src="images/ad6.png">
-                            <h2> N 930 </h2>
-                            <p class="m-0"> Refurbished </p>
-                            <button class="btn">select</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="level"> Iphone 12 </div>
-                        <div class="feature-item p-4">
-                            <img class="thumbnail" src="images/ad6.png">
-                            <h2> N 930 </h2>
-                            <p class="m-0"> Refurbished </p>
-                            <button class="btn">select</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="level"> Iphone 12 </div>
-                        <div class="feature-item p-4">
-                            <img class="thumbnail" src="images/ad6.png">
-                            <h2> N 930 </h2>
-                            <p class="m-0"> Refurbished </p>
-                            <button class="btn">select</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="level"> Iphone XS </div>
-                    <div class="feature-item p-4">
-                    <img class="thumbnail" src="images/ad9.png">
-                    <h2> N 1300 </h2>
-                        <p class="m-0"> 128GB ROM, no face ID </p>
-                        <button class="btn">select</button>
-                    </div>
-                    <button class="btn">See related items</button>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="level"> Weight Machine </div>
-                    <div class="feature-item p-4">
-                        <img class="thumbnail" src="images/ad2.png">
-                        <h2> N 1300 </h2>
-                        <p class="m-0">Lorem ipsum dolor sit.</p>
-                        <button class="btn">select</button>
-                    </div>
-                    <button class="btn">See related items</button>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="level"> Facial Massager Gun </div>
-                    <div class="feature-item p-4">
-                        <img class="thumbnail" src="images/ad10.png">
-                        <h2> N 1300 </h2>
-                        <p class="m-0"> Clean and affordable </p>
-                        <button class="btn">select</button>
-                    </div>
-                    <button class="btn">See related items</button>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="level"> Iphone 12 </div>
-                    <div class="feature-item p-4">
-                        <img class="thumbnail" src="images/ad6.png">
-                        <h2> N 930 </h2>
-                        <p class="m-0"> Refurbished </p>
-                        <button class="btn">select</button>
-                    </div>
-                    <button class="btn">See related items</button>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="level"> Iphone 12 </div>
-                    <div class="feature-item p-4">
-                        <img class="thumbnail" src="images/ad6.png">
-                        <h2> N 930 </h2>
-                        <p class="m-0"> Refurbished </p>
-                        <button class="btn">select</button>
-                    </div>
-                    <button class="btn">See related items</button>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="level"> Iphone 12 </div>
-                    <div class="feature-item p-4">
-                        <img class="thumbnail" src="images/ad6.png">
-                        <h2> N 930 </h2>
-                        <p class="m-0"> Refurbished </p>
-                        <button class="btn">select</button>
-                    </div>
-                    <button class="btn">See related items</button>
                 </div>
             </div>
         </div>
@@ -464,48 +396,51 @@
             <div class="row g-4">
                 <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="level"> Hoodies </div>
-                    <div class="feature-item p-4">
+                    <div class="p-4">
                         <img class="thumbnail" src="images/ad2.png">
                     </div>
                     <button class="btn">Explore</button>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="level"> Hoodies </div>
-                    <div class="feature-item p-4">
+                    <div class="p-4">
                         <img class="thumbnail" src="images/ad2.png">
                     </div>
                     <button class="btn">Explore</button>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="level"> Gaming Accessories </div>
-                    <div class="feature-item p-4">
+                    <div class="p-4">
                         <img class="thumbnail" src="images/ad10.png">
                     </div>
                     <button class="btn">Explore</button>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="level"> Women's Bags </div>
-                    <div class="feature-item p-4">
+                    <div class="p-4">
                         <img class="thumbnail" src="images/ad6.png">
                     </div>
                     <button class="btn">Explore</button>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="level"> Phones </div>
-                    <div class="feature-item p-4">
+                    <div class="p-4">
                         <img class="thumbnail" src="images/ad6.png">
                     </div>
                     <button class="btn">Explore</button>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="level"> Computer Accesories </div>
-                    <div class="feature-item p-4">
+                    <div class="p-4">
                         <img class="thumbnail" src="images/ad6.png">
                     </div>
                     <button class="btn">Explore</button>
                 </div>
             </div>
         </div>
+
+        
+        
         <!--trending items end-->
            
 
@@ -577,7 +512,7 @@
                             <h4>About Bera</h4>
                             <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">We are hiring!</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms & Conditions</a></li>            
+                            <li><i class="bx bx-chevron-right"></i> <a href="terms and conditions.html">Terms & Conditions</a></li>            
                             <li><i class="bx bx-chevron-right"></i> <a href="privacy policy.html">Privacy Policy</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Billing Policy</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Cookie Policy</a></li>
@@ -598,7 +533,7 @@
                                 <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#">Top Categories</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#">Promote Your Ad</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">My Account</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="account.html">My Account</a></li>
                                 </ul>
                         </div>
                     </div>
